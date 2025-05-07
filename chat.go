@@ -275,7 +275,7 @@ type ChatCompletionRequest struct {
 	Metadata map[string]string `json:"metadata,omitempty"`
 	// Configuration for a predicted output.
 	Prediction *Prediction `json:"prediction,omitempty"`
-	// ExtraBody provides a way to add non-standard parameters to the request body. such as think mode for qwen3
+	// ChatTemplateKwargs provides a way to add non-standard parameters to the request body. such as think mode for qwen3
 	ChatTemplateKwargs map[string]any `json:"chat_template_kwargs,omitempty"`
 }
 
